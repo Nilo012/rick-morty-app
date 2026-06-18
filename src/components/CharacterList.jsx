@@ -4,27 +4,40 @@ import Character from "./Character";
 
 import { getCharacters } from "../data/httpClient";
 
-// src/components/CharacterList.jsx
+
 import styles from "../components/CharacterList.module.css";
+import { Pagination } from "./Pagination";
+import { Search } from "./search";
 
 function CharacterList() {
   const [characters, setCharacters] = useState([]);
+  const [page, setPage] = useState(1);
+  const [info, setInfo] = useState({});
+  const [search, setSearch] = useState(""); // Nuevo estado*****
 
   useEffect(() => {
-    getCharacters(1).then((data) => {
+    getCharacters(page, search).then((data) => {
       // Usamos el .results que viene de tu httpClient
-      setCharacters(data.results);
+      setCharacters(data.results || []);
+      setInfo(data.info || {});
     });
-  }, []);
+  }, [page, search]); // Se activa si cambia la página O si escribes algo
 
   return (
-    <>
-      <ul className={styles.container}>
+    <div>
+      <div className={styles.header}>
+        <Search search={search} setSearch={setSearch} setPage={setPage} />
+
+        {/* Botones de navegación */}
+        <Pagination page={page} setPage={setPage} info={info} />
+      </div>
+
+      <ul className={styles.containerList}>
         {characters.map((character) => (
           <Character key={character.id} character={character} />
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

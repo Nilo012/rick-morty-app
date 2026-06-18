@@ -1,9 +1,14 @@
 const API = "https://rickandmortyapi.com/api";
 
-export async function getCharacters(page = 1) {
+export async function getCharacters(page = 1,name="") {////
   try {
-    const response = await fetch(`${API}/character/?page=${page}`);
 
+   // Si hay un nombre, lo incluimos en la URL de búsqueda
+    const url = name 
+      ? `${API}/character/?page=${page}&name=${name}`//////
+      : `${API}/character/?page=${page}`;///////
+
+    const response = await fetch(url);//////
     if (!response.ok) {
       throw new Error("No se pudieron obtener los personajes");
     }

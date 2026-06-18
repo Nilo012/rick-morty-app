@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+ 
+}
+.container span {
+  display: flex;
+  align-items: center;    /* Centra cualquier cosa dentro del span */
+  justify-content: center;
+}
+
+.icon, .iconAnterior {
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: 0.5s;
+ 
+}
+.iconAnterior{
+  rotate: calc(180deg);
+}
+
+
+.icon:hover,
+.iconAnterior:hover {
+  cursor: pointer;
+  color:#61bc84 ;
+  transform: translateX(10px);
+  transition: 0.5s;
+}

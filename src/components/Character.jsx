@@ -13,11 +13,10 @@ function Character({ character }) {
           alt={character.name}
           className={styles.cardImg}
         />
-        
-        
         </Link>
         <h2>{character.name}</h2>
         <h4>{character.species}</h4>
+        
         
       </li>
     </>

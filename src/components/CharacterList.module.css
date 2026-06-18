@@ -1,14 +1,26 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,230px);
-    gap: 40px;
-    padding: 40px;
-    justify-content: center;
+.containerList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 560px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  .searchInput {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  }
 
 }
-@media (max-wiht:56px) {
-    .containe{
-        grid-template-columns: 100%;
-    }
-    
-}
+
