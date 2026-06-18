@@ -7,7 +7,7 @@ import { getCharacters } from "../data/httpClient";
 
 import styles from "../components/CharacterList.module.css";
 import { Pagination } from "./Pagination";
-import { Search } from "./Search";
+import  Search  from "./Search";
 
 function CharacterList() {
   const [characters, setCharacters] = useState([]);
