@@ -1,3 +1,7 @@
+# 🚀 Demo
+* **Ver proyecto en vivo:** [Rick and Morty app](https://rick-morty-app-livid.vercel.app/)
+
+
 # 🚀 Rick and Morty App
 
 Esta es una aplicación web interactiva desarrollada con **React** y **Vite** que permite explorar y buscar personajes de la famosa serie animada Rick and Morty, consumiendo datos directamente desde la [Rick and Morty API](https://rickandmortyapi.com/).
