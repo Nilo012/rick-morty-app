@@ -1,5 +1,4 @@
-# Crear el contenido del README.md en formato markdown
-readme_content = """# 🚀 Rick and Morty App
+# 🚀 Rick and Morty App
 
 Esta es una aplicación web interactiva desarrollada con **React** y **Vite** que permite explorar y buscar personajes de la famosa serie animada Rick and Morty, consumiendo datos directamente desde la [Rick and Morty API](https://rickandmortyapi.com/).
 
