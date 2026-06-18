@@ -1,3 +1,38 @@
+# Crear el contenido del README.md en formato markdown
+readme_content = """# 🚀 Rick and Morty App
+
+Esta es una aplicación web interactiva desarrollada con **React** y **Vite** que permite explorar y buscar personajes de la famosa serie animada Rick and Morty, consumiendo datos directamente desde la [Rick and Morty API](https://rickandmortyapi.com/).
+
+## ✨ Características Principales
+
+* **Búsqueda en tiempo real:** Filtra personajes por nombre de manera rápida.
+* **Navegación paginada:** Explora todos los resultados mediante un sistema de paginación robusto.
+* **Diseño Responsivo:** Interfaz adaptada tanto para dispositivos móviles como para equipos de escritorio.
+* **Arquitectura Limpia:** Uso de componentes modulares y CSS Modules para una fácil escalabilidad.
+
+## 🛠 Tecnologías Utilizadas
+
+* **Framework:** [React](https://reactjs.org/) (Vite).
+* **Estilos:** [CSS Modules](https://github.com/css-modules/css-modules).
+* **Icons:** [react-icons](https://react-icons.github.io/react-icons/).
+* **Gestión de Estado:** `useState` y `useEffect` de React.
+
+## 📁 Estructura del Proyecto
+
+```text
+src/
+├── assets/           # Recursos estáticos (imágenes)
+├── components/       # Componentes reutilizables
+│   ├── Character.jsx         # Card individual de personaje
+│   ├── CharacterList.jsx     # Orquestador de la lista
+│   ├── Footer.jsx            # Pie de página persistente
+│   ├── Pagination.jsx        # Controles de navegación
+│   └── Search.jsx            # Barra de búsqueda
+├── data/             # Lógica de conexión (httpClient)
+└── App.jsx           # Componente raíz
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
